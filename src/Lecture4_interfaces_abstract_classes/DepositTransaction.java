@@ -1,16 +1,13 @@
-package Lecture4_interfaces_abstract_classes;
-
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Calendar;
 
-public class DepositTrasaction extends BaseTransaction {
-    public DepositTrasaction(int amount, @NotNull Calendar date){
+public class DepositTransaction extends BaseTransaction {
+    public DepositTransaction(int amount, @NotNull Calendar date){
         super(amount, date);
     }
     private boolean checkDepositAmount(int amt){
         if (amt < 0){
-           return false;
+            return false;
         }
         else{
             return  true;
